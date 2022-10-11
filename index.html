@@ -1,0 +1,134 @@
+<!-- Notes:https://Website-1.gerald54.repl.co
+
+- <!DOCTYPE html> : is used to refer to which version of html we are using which is up to date
+- <html> : tells us that all the code inside the html tag element is html (comes after the !DOCTYPE type)
+- <head></head> : sets information such as the title of description of the page 
+- <body>
+  Contains all the information that we want to store inside the browser which includes (Text,images, videos, etc)
+  </body> 
+ --> 
+
+<!-- <Section HTML ELEMENT:
+
+<element> Starts with a "Start tag"
+  Contenet And Content within these tags (Text,elements,etc)
+  <empty> "Empty elements" Has no content and have no end tag
+
+-<img src = ""image/path""> is an example of an empty element (has an attricube called source)
+
+</element> Ends with a "End tag"
+
+- <a></a>: The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+ --> 
+
+ <!-- HEll0 -->
+
+
+<!DOCTYPE html>
+
+  <html>
+    <head> 
+      <title>BTS</title> <!-- Changes the title of the top web page -->
+      <meta name = "description" content = "this is the description"><!--This would show a description of our page whenever you search for it -->
+      <link rel = "stylesheet" href = "style.css" />
+    </head>
+    <body>
+        <header class = "main-header"> 
+            <nav class = "nav main-nav">
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "store.html">STORE</a></li>
+                    <li><a href = "about.html">ABOUT</a></li>
+                  
+                </ul>
+            </nav>
+            <h1 class = "band-name band-name-large">BTS</h1>
+            <div class = "container"> <!--used a div because we want our padding to be confined within thid div container so it would be centered towards the middle of the scrreen. -->
+              <button class ="btn btn-header" type = "button">Get our latest album</button>
+            </div>
+            <button class = "btn btn-header btn-play " type = "button">&#9658;</button>
+        </header>
+
+        <section class = "content-section container">
+          <h2 class = "section-header">TOURS</h2>
+          <div>
+            <div class = "tour-row">
+              <span class = "tour-item tour-date" > 11/27/2021</span>
+              <span class = "tour-item tour-city">INGLEWOOD, US</span>
+              <span class = "tour-item tour-arena">SOFI STADIUM/YOUTUBE THEATER</span>      
+              <button type = "button" class = "btn tour-item tour-btn btn-primary ">BUY TICKETS</button>
+            </div>
+            <div class = "tour-row"> 
+              <span class = "tour-item tour-date">12/1/2021</span>            
+              <span class = "tour-item tour-city">INGLEWOOD, US</span>             
+              <span class = "tour-item tour-arena">SOFI STADIUM/YOUTUBE THEATER</span>                    
+              <button type = "button" class = "btn tour-item tour-btn btn-primary ">BUY TICKETS</button>             
+            </div>
+              <div class = "tour-row">
+                <span class = "tour-item tour-date">3/10/2022</span>
+                <span class = "tour-item tour-city">SEOUL,SOUTH KOREA</span>
+                <span class = "tour-item tour-arena">SEOUL OLYMPIC STADIUM/SELECT GLOBAL THEATRES</span>
+                <button tpye = "button" class = "btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+              </div>
+              <div class = "tour-row">
+                <span class = "tour-item tour-date">3/12/2022</span>
+                <span class = "tour-item tour-city">SEOUL, SOUTH KOREA</span>
+                <span class = "tour-item tour-arena">SEOUL OLYMPIC STADIUM/SELECT GLOBAL THEATRES</span>
+                <button tpye = "button" class = "btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+              </div>
+            <div class = "tour-row">
+                <span class = "tour-item tour-date">11/28/2022</span>
+                <span class = "tour-item tour-city">INGLEWOOD, US</span>
+                <span class = "tour-item tour-arena">SOFI STADIUM/YOUTUBE THEATER</span>                     
+                <button type = "button" class = "btn tour-item tour-btn btn-primary ">BUY TICKETS</button>                
+            </div>
+              <div class = "tour-row">
+                <span class = "tour-item tour-date">12/2/2022</span>
+                <span class = "tour-item tour-city">INGLEWOOD, US</span>
+                <span class = "tour-item tour-arena">SOFI STADIUM/YOUTUBE THEATER</span>
+                <button type = "button" class = "btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+              </div>
+            </div>
+          </section>
+        
+        <footer class = "main-footer"> <!-- This would be a grouping of text almost at the end of the page -->
+            <div class = "container main-footer-container">
+            <h2 class = "band-name">BTS</h2> <!-- using the same class for a diffrent element will copy the same styles and is able to be resued for diffeent elemets assigned to it for example "band-name" -->
+            <ul class  = "nav footer-nav">
+              
+                <li>
+                  <a href ="https://www.instagram.com/bts.bighitofficial/?hl=en" target = "_blank">
+                    <img src = "Images/ig.png" height = "70">  
+                  </a> 
+                </li>
+
+              <li>
+    
+                  <a href = "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target = "_blank">
+                    <img src = "Images/spotify.png" height = "70"> 
+                  </a>
+              </li>
+              
+              <li>
+                  <a href = "https://www.youtube.com/c/BANGTANTV" target = "_blank">
+                   <img src = "Images/youtube.png" height = "70"> 
+                  </a>
+              </li>
+              
+            </ul>
+          </div>
+      </footer>
+    </body>
+    
+  </html>
+
+
+
+
+
+
+
+  
+
+
+

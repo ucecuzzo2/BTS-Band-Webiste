@@ -1,0 +1,369 @@
+ /*style.css is correlated with about.html */
+
+/* rgba(red,green,blue,alpha) */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+
+* {  /* everything selector which applies to all the elements in the html */
+  box-sizing: border-box;  /* makes it so that the size of elemets are determined by the padding and the margin as well as the size of the content*/
+  font-family: 'Roboto', sans-serif; /* make sure to apply this for the font to work */
+  color: #777 /*light grey color */
+}
+
+html,body {
+  margin: 0;
+  padding:0;
+}
+
+.nav ul {  /*used to style the ul within the nav */
+  margin: 0;
+}
+
+.nav li {
+  display: inline; /* renders the listed items inline (stright line) as opposed to endl*/
+}
+
+.nav a { /* style the links "a href" themsleves */
+  
+  display: inline-block; /* allows you to add elements that inline elements cant allow you to do */
+  padding: .5em; /* spaces out the elements from each other */
+  color: white; /* gives the color of white */
+  text-decoration: none; /* removes the underline underneath the links*/
+  
+}
+
+.main-nav {  /*this would center and edit the main navigation elements */
+  text-align: center;
+  font-size: 1.1em; /* em adjust the font size */
+  font-weight: lighter; /* makes it lighter to blend into the background */
+  border-bottom: 1px solid rgba(255,255,255,.3); /* a horiziontal line under nanvigation which replaced the "<hr>" element in html and assigned to a light grey color that is 1 pixel wide */
+}
+
+.main-nav li { /* this spaces out the elements for the "li" elements */
+  padding: 0 5%; /* padding of 0 top and bottom anda 5% on the left and right */
+}
+
+.nav a:hover { /* hover selector indictates when we hover over elements we want to do something*/
+   background-color: rgba(225, 255, 255, .3 ); /* transparency at 30 perent also light grey*/ 
+  
+}
+
+.main-header {
+  background-color: rgba(0,0,0,.6);
+  background-image: url("Images/background1.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+  
+}
+
+
+/*BAND SECTION */
+
+.band-name {  
+  text-align:center; /* allgin BTS text */
+  margin: 0; /* remove the margins */
+  font-size: 4em; /* change front title bst size */
+  font-family: 'Roboto', sans-serif; 
+  font-weight: normal;
+  color: white;
+}
+
+.band-name-large { /*  changes the size of the bts title larger */
+  font-size: 9em;
+}
+
+
+/* CONTENT SECTION */
+
+.content-section { /* gives us spacing in between the dges of the page top bottom left and right*/
+  margin: 2em;
+}
+
+.container {
+  max-width: 900px; /* this means that if our element trys to get any larger than 900 pixels than it would stay at 900 pixels */
+  margin: 0 auto; /* auto tell us that the magins on the left and right hand side will be as large as it needs to be so that the text will always be cenetered in the middle "Margin: 0 allows us to center the text" */
+  padding: 0 1.5em /* 0 paddinfg would push it away from the sides and 1.5 em whch wold give us space so the text does not run up the side of our webpage  */
+}
+
+/* ABOUT SECTION */
+
+.section-header { 
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal; /* un bolds the text */
+  color: #333;
+  text-align: center; /* center text */
+  font-size: 2.5em;
+}
+
+.about-band-image {
+  float: left; /* the image will remove itself from the fhttps://Website-1.gerald54.repl.colow and flow completely to the left side of the document. */
+  height: 300px;
+  margin: 15px; /* this would push the text away from the image giving space */
+  border-radius: 50%; /* this tells us how far we want to curve the edges of the border for this case the image. "50 % percent would make a perfect circle"  */
+}
+
+/* FOOTER END OF PAGE SECTION */
+
+.main-footer {  
+
+  background-color: #87CEFB;  /* this would change the backround footer section to light blue */
+  color: white; /* makes all the text in this footer white */
+  padding: .25em 0; /* .25em on the top and bottom, and 0 in the left and right */
+  
+}
+
+.main-footer-container {  
+  display: flex; /* A flex container expands items to fill available free space or shrinks them to prevent overflow */
+  align-items: center; /* this would center all the elements in this flex box */
+}
+
+.main-footer-container ul {
+  flex-grow: 1; /* this allows the elements to grow to take as much space as possible  */
+  text-align: end; /* this allows to line our text in that element all the way to the end of the element */
+}
+
+.footer-nav li {
+  padding: 0 5em; /* gives space around each element */
+}
+
+.footer-nav img { /* this changes the images in the footer */
+  height: 50px;
+}
+
+/* BUTTON CLASS */
+
+.btn { /* button arent intially changed because our buttons are not tall or wide enough */
+  text-align: center;
+  vertical-align: middle; /* puts our text in the middle vertically */
+  padding: .67em; /* adds more space and edging around our button */
+  cursor: pointer /* this changes the cursor to a pointer (hand) as oppose to pointer*/
+}
+
+.btn-header {
+  /* NOTES: */
+  /* margin: top margin, right margin, bottom margin, left margin*/
+  margin: .5em 15% 2em 15%;  /* the first value corresponds to the top margin .5em which would be half the size of the font. 15% would correspond to the right side margin taking up 15% percent of the total space our object can occupy. 2em would correspond to the bottom margin. and another 15% as the left margin.  */
+  color: white; /* change the text color to white */
+  border: 2px solid #2D9CDB; /* add a border around our object which wold be 2 px xolid and a blude color as our border color  */
+  background-color: rgba(255,255,255,.1); /* removes the gray backgorund on background makes it transprent */
+  border-radius: 0; /* border radius corresponds to how round the corners are. setting it to 0 would have no rounded corners   */
+  font-size: 1.5em; /* increase font size */
+  font-weight: lighter; /* makes text slighlty thinner */
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255,255,255,.3);  /* transparnet color hover */
+}
+
+.btn-play {
+  display: block; /* */
+  margin: 0 auto; /* 0 on top and botom and auto left and right to center the play button */
+  /* dosent center intially because button are not block level elements and only block elements can a have a auto margin  */
+  color: #2D9CDB; /* change the color of play button */
+  font-size: 4em;  /* font size bigger */
+  border-radius: 50%;  /* makes a oval shape b/c our button has diffent padding on it */
+  padding: 0;  /* make padding to zero */
+  width: 100px;  /* adjust height and width to circle */
+  height: 100px;
+  
+}
+
+
+.btn-primary { /* styles the button element "BUT TICKETS" on index html */
+  color: white; /* text color to white */
+  background-color: #56CCF2; /* background color */
+  border: none; /* reomves border */
+  border-radius: .3m; /* border-radius makes the shape of button */
+  font-weight: bold; /* bold the font */
+}
+
+.btn-primary:hover { /* hover for primary button */
+  background-color: #2D9CDB; /* hover button */
+}
+
+
+ /* ROW'S SECTION FOR TOUR (INDEX PAGE) */
+
+.tour-row {
+  border-bottom: 1px solid black;  /*  border in the bottom of the row */
+  padding-bottom: 1em;  /* space between content and the border  */
+  margin-bottom: 1em ;  /* gives us apce for the content below the border */
+}
+
+.tour-row:last-child { /* this would select the last child with this specific selector class */
+  border-bottom:none; /* for the last child we would put no border for last row */
+}
+
+/* TOUR ITEM / DATE  */
+
+.tour-item {
+  display: inline-block;
+  padding-right: .5em; /* gives us apce to the right of the date */
+  
+}
+
+.tour-date {
+  color: #555;
+  font-weight: bold;
+  width: 15%; /*  fives us spacing eveen if we increase the browser*/
+}
+
+.tour-city {
+  width: 24%; /* gives us spacing in between our city element */
+}
+
+.tour-arena {
+  width: 42%; /* gives spacing in between arena element */
+}
+
+.tour-btn {
+  max-width: 19%; /* use max width so to prevent the icrease size of the button */
+}
+
+/* SHOP STYLING ELEMENTS */
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block; /* this would make the title on its own line as oppsed to being in front of the image */
+  width: 100%; /*  takes the entire width of the image*/
+  text-align:center; /* center title */
+  font-weight: bold; /* bold */
+  font-size: 1.5em; /* font size 1.5 */
+  color: #333;
+  margin-bottom: 15px; /* margin under the bottom title */
+}
+
+.shop-item-image {
+  height: 250px; /* change height which adjust the width automatically applying height */
+}
+
+
+.shop-item-details {
+  display: flex; /* because we want to center the items vertically so there all within the same line */
+  align-items: center; /* vertically algn price and add to cart elements */
+  padding: 5px; /* creates space between the dettails elements and the image  */
+}
+
+.shop-item-price {
+  flex-grow: 1; /* makes the button space out to the right hand side of the screen  */
+  color: #333;
+}
+
+
+.shop-items {
+  display:flex; /* */
+  flex-wrap: wrap; /* makes it so that the elements can wrap down instead of the end of the screen  */
+  justify-content: space-around; /* gives even spacing in the left and right hand side of every element  */
+}
+
+
+/* CART ELEMENTS FOR STORE */
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+.cart-column {
+  display: flex;
+  align-items: center; /*center our items and allign them vertically */
+  border-bottom: 1px solid black; /* border in the bottom line */
+  margin-right: 1.5em; /* gives span in between or columns so names are spaced out */
+  padding-bottom: 10px; /* space below the column names */
+  margin-top: 10px; /* space at the top below the cart header */
+}
+
+.cart-row {
+  display: flex; /* gets all these items into one line */
+  
+}
+
+.cart-item {
+  width: 45%; /* adsjust the wifth to match the column name */
+}
+
+.cart-price {
+  width: 20%; /* adsjust the wifth to match the column name */
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%; /* adsjust the wifth to match the column name */
+}
+
+.cart-item-title{
+  color: #333;
+  margin-left: .5m;
+  font-size:  1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto; /* auto so that the height would automaically adjust to the width */
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  font-weight: bold;
+  border-radius: .3em;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row-last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-total {
+  text-align:end; /* the text will go to the end of the line */
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display:block; /* so we can center the purchase button */
+  /* margin: top,left,bottom,right */
+  margin: 40px auto 80px auto;
+  font-size: 1.7em;
+}
